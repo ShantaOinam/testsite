@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/grapes.ico" />
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("images/grapes.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1.00;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  /*background-image: url("images/grapes.jpg");*/
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg">
+<h1 align="center" style="color:white">UiPath Chatbot!</H1>
+<!-- <p style="color:gray">Chatbot IFrame: Chabot Agent should appear below right corner once properly integrated. Try it!</p> -->
+<a href="https://slack.com/oauth/v2/authorize?client_id=1274434435587.1273037154517&scope=im:history,im:read,im:write,chat:write&user_scope="><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+<meta name="slack-app-id" content="A0181134JF7">
+</div>
+
+<div class="caption">
+	<span class="border">GRAPES</span><br><br><br>
+	<span class="border">KEEP SPIRIT HIGH</span>
+</div>
+
+<div class="bgimg-1"></div>
+
+
+
+
+
+<!-- Start of UiPath Chatbot widget -->
+    <script>
+  window.addEventListener("message", function (event) {
+      if (event.data.hasOwnProperty("frameSize")) {
+          const size = event.data.frameSize;
+          document.getElementById("uipath-chatbot-iframe").style.height = size.height;
+          document.getElementById("uipath-chatbot-iframe").style.width = size.width;
+      }
+  });
+</script>
+
+
+</html>
+<!-- End of UiPath Chatbot widget -->
+
+
+
+
+
+  <script src="https://chatbot.epsilonai.com/script/chatter-pbkdf2_sha256$36000$yHBTrMF6tRYn$FrNrmiUOcSIaT6MLl7xU78iQ6ysn5Id3vHJvH8NodUM=.js"></script>
+</body>
+</html>
+
+
+
